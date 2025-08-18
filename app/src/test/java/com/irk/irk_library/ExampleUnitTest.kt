@@ -1,4 +1,4 @@
-package com.example.irk_library
+package com.irk.irk_library
 
 import org.junit.Test
 

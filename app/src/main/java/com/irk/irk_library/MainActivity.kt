@@ -1,4 +1,4 @@
-package com.example.irk_library
+package com.irk.irk_library
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -7,7 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.irk_library.databinding.ActivityMainBinding
+import com.irk.irk_library.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

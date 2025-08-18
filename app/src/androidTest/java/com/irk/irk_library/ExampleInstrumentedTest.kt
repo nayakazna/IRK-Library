@@ -1,4 +1,4 @@
-package com.example.irk_library
+package com.irk.irk_library
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
