@@ -207,11 +207,5 @@ IRK-Library-Android/
 1. **Divide and Conquer**
     - Implementasi di determinan calculation
     - Tree construction di Huffman
-
-2. **Greedy Algorithm**
-    - Huffman coding tree building
-    - Optimal code assignment
-
-3. **Dynamic Programming Approach**
-    - Matrix operations optimization
-    - Step tracking untuk visualisasi
+2. **Brute FOrce**
+   - Mayoritas pakai ini
