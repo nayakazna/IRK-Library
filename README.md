@@ -85,6 +85,7 @@ dependencies {
 ## ✨ **Fitur-Fitur Keren**
 
 ### **🔢 Page 1: Operasi Matrix & Aljabar Linear**
+![IMG-20250819-WA0060.jpg](docs/IMG-20250819-WA0060.jpg)
 
 **Algoritma yang Diimplementasi:**
 - Eliminasi Gauss
@@ -102,7 +103,7 @@ dependencies {
 - Validasi input real-time
 
 ### **🔐 Page 2: Kriptografi**
-
+![IMG-20250819-WA0061.jpg](docs/IMG-20250819-WA0061.jpg)
 **Algoritma yang Diimplementasi:**
 
 #### **Caesar Cipher**
@@ -123,7 +124,7 @@ dependencies {
 - Enkripsi/dekripsi real-time
 
 ### **🌳 Page 3: Huffman Coding**
-
+![IMG-20250819-WA0062.jpg](docs/IMG-20250819-WA0062.jpg)
 **Algoritma yang Diimplementasi:**
 - Analisis Frekuensi
 - Priority Queue
@@ -147,6 +148,7 @@ dependencies {
 - **Canvas scrollable:** Horizontal scrolling buat tree yang gede
 
 ### **ℹ️ Page 4: About (Bonus)**
+![IMG-20250819-WA0063.jpg](docs/IMG-20250819-WA0063.jpg)
 Informasi tentang saya. :D
 ---
 
