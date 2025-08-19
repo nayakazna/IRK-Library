@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.crypto.CryptoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- judul -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operasi Kriptografi"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Caesar Cipher -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Caesar Cipher"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@android:color/holo_blue_light"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etInputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter text to encrypt/decrypt"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shift: "
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/etShift"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:text="3"
+                android:textAlignment="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/btnCaesarEncrypt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Encrypt"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnCaesarDecrypt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Decrypt" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCaesarResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="8dp"
+            android:text="Hasil akan muncul di sini..." />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@android:color/black"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/tvCaesarSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:fontFamily="monospace"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:text="Langkah-langkah akan muncul di sini..." />
+
+        </ScrollView>
+
+        <!-- RSA bos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Algoritma RSA"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@android:color/holo_red_light"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="p: "
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/etPrimeP"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:text="11"
+                android:textAlignment="center"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="q: "
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/etPrimeQ"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:text="13"
+                android:textAlignment="center"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/btnGenerateKeys"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hasilkan keys" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRsaKeys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="16dp"
+            android:text="Kunci RSA akan muncul di sini..." />
+
+        <LinearLayout
+            android:id="@+id/layoutRsaControls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etRsaText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan teks untuk enkripsi RSA"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnRsaEncrypt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enkripsi"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btnRsaDecrypt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dekripsi" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvRsaResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="8dp"
+                android:text="Hasil RSA akan muncul di sini..." />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:color/black">
+
+            <TextView
+                android:id="@+id/tvRsaSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:fontFamily="monospace"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:text="Langkah-langkah RSA akan muncu di sini..." />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</ScrollView>

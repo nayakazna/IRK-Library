@@ -2,18 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:id="@+id/navigation_matrix"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Matrix" />
 
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:id="@+id/navigation_crypto"
+        android:icon="@android:drawable/ic_lock_lock"
+        android:title="Crypto" />
 
     <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:id="@+id/navigation_huffman"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Huffman" />
+
+    <item
+        android:id="@+id/navigation_about"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="About" />
 
 </menu>

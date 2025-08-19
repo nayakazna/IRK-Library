@@ -3,23 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_matrix">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.irk.irk_library.ui.matrix.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_matrix"
+        android:name="com.irk.irk_library.ui.matrix.MatrixFragment"
+        android:label="Matrix Operations"
+        tools:layout="@layout/fragment_matrix" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.irk.irk_library.ui.crypto.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_crypto"
+        android:name="com.irk.irk_library.ui.crypto.CryptoFragment"
+        android:label="Cryptography"
+        tools:layout="@layout/fragment_crypto" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.irk.irk_library.ui.huffman.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_huffman"
+        android:name="com.irk.irk_library.ui.huffman.HuffmanFragment"
+        android:label="Huffman Coding"
+        tools:layout="@layout/fragment_huffman" />
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.irk.irk_library.ui.about.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+
 </navigation>
